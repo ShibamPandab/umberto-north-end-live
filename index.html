@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umberto's North End | Authentic Sicilian Pizza & Boston Heritage</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Inspired by Galleria Umberto. Savor historic Sicilian square pizza, golden arancini, and panzarotti in Boston's North End. A family-owned Boston institution since 1978.">
+    <meta name="keywords" content="Umberto's Pizza, North End Boston, Sicilian Pizza, Boston Pizza, Galleria Umberto, Arancini, Panzarotti, Italian Restaurant Boston">
+    <link rel="canonical" href="https://umbertosnorthend.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://umbertosnorthend.com">
+    <meta property="og:title" content="Umberto's North End | Authentic Sicilian Pizza & Boston Heritage">
+    <meta property="og:description" content="Taste the legacy of Boston's finest square Sicilian pizza, arancini, and hand-rolled panzarotti. Authentic, historic, and family-owned.">
+    <meta property="og:image" content="assets/hero-pizza.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;700;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org JSON-LD Structured Data for Restaurant SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PizzaRestaurant",
+      "name": "Umberto's North End",
+      "image": "assets/hero-pizza.png",
+      "@id": "https://umbertosnorthend.com/#restaurant",
+      "url": "https://umbertosnorthend.com",
+      "telephone": "+16175550198",
+      "priceRange": "$",
+      "menu": "https://umbertosnorthend.com/#menu",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "289 Hanover St",
+        "addressLocality": "Boston",
+        "addressRegion": "MA",
+        "postalCode": "02113",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.3639,
+        "longitude": -71.0537
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "14:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/umbertosnorthend",
+        "https://www.instagram.com/umbertosnorthend"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Oven Glow Overlay (Pulsing background ambient) -->
+    <div class="oven-glow-bg"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="logo-link">
+                <span class="logo-accent">Umberto's</span>
+                <span class="logo-subtitle">North End</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#story" class="nav-link">Our Story</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#hours-location" class="nav-link">Hours & Find Us</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn-cta">Order Now</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <canvas id="flour-canvas" class="flour-canvas"></canvas>
+        <div class="hero-image-overlay"></div>
+        <div class="hero-content reveal-on-scroll">
+            <div class="stamp-badge">
+                <svg viewBox="0 0 100 100" class="circular-text-svg">
+                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                    <text class="circular-text">
+                        <textPath href="#circlePath">BOSTON'S HISTORIC NORTH END • EST. 1978 •</textPath>
+                    </text>
+                </svg>
+                <div class="stamp-center"><i class="fa-solid fa-pizza-slice"></i></div>
+            </div>
+            
+            <span class="hero-subtitle">Legendary Sicilian Square Pizza</span>
+            <h1 class="hero-title">A Boston Institution</h1>
+            <p class="hero-lead">Handcrafted thick-crust bakery trays, loaded arancini, and historic family recipes baked daily. When we run out of fresh dough, we close for the day!</p>
+            
+            <div class="hero-ctas">
+                <a href="#menu" class="btn btn-primary"><span class="btn-shine"></span>Explore Signature Menu</a>
+                <a href="#hours-location" class="btn btn-secondary"><i class="fa-solid fa-map-location-dot"></i> Get Directions</a>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <span class="scroll-text">Taste the Tradition</span>
+                <div class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="grid grid-2-cols align-center">
+                <div class="story-image-wrapper reveal-on-scroll slide-left">
+                    <img src="assets/historic-boston.png" alt="Historic Umberto's North End restaurant interior with exposed brick and candle lighting" class="story-img">
+                    <div class="story-experience-badge">
+                        <span class="badge-years">48</span>
+                        <span class="badge-text">Years of Heritage</span>
+                    </div>
+                </div>
+                
+                <div class="story-content-wrapper reveal-on-scroll slide-right">
+                    <span class="section-tag font-olive">THE BOSTON LEGACY</span>
+                    <h2 class="section-title">An Authentic Sicilian Love Story</h2>
+                    <div class="title-divider-gold"></div>
+                    <p class="story-text highlighted">
+                        Stepping into Umberto's is like taking a portal straight to Palermo, via Boston's historic North End cobblestones.
+                    </p>
+                    <p class="story-text">
+                        Since 1978, we have maintained a simple, uncompromising promise: high-quality Italian street food served in a warm, no-nonsense neighborhood atmosphere. We specialize in classic **Sicilian Pizza**—thick, airy, double-baked dough loaded with savory sweet tomato sauce and fresh premium mozzarella.
+                    </p>
+                    <p class="story-text">
+                        Our arancini and panzarotti are rolled by hand every single morning using the same recipe our grandfather Umberto brought from Sicily. Like the famous traditional bakeries on Hanover Street, we don't believe in fancy gimmicks. Just honest, delicious food that feeds the soul.
+                    </p>
+                    
+                    <div class="signature-block">
+                        <div class="signature-details">
+                            <span class="signature-name">Umberto & Family</span>
+                            <span class="signature-title">Founders & Pizaiolos</span>
+                        </div>
+                        <div class="signature-svg">
+                            <!-- Custom elegant decorative flourish SVG -->
+                            <svg width="120" height="50" viewBox="0 0 120 50" fill="none">
+                                <path d="M10 25 C30 5, 50 45, 70 25 C90 5, 100 35, 115 25" stroke="#D9A241" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="text-center reveal-on-scroll">
+                <span class="section-tag font-brick">BAKED FRESH DAILY</span>
+                <h2 class="section-title font-cream">The Signature Menu</h2>
+                <div class="title-divider-gold"></div>
+                <p class="menu-desc">Everything is made by hand starting at 5:00 AM. In authentic Boston fashion, when our fresh dough runs out, our doors close. Get here early!</p>
+            </div>
+            
+            <!-- Dynamic Category Navigation Tabs -->
+            <div class="menu-tabs-wrapper reveal-on-scroll">
+                <div class="menu-tabs">
+                    <button class="menu-tab-btn active" data-category="all">Full Menu</button>
+                    <button class="menu-tab-btn" data-category="pizza">Sicilian Pizza</button>
+                    <button class="menu-tab-btn" data-category="snacks">Arancini & Panzarotti</button>
+                    <button class="menu-tab-btn" data-category="specialties">Specialties</button>
+                </div>
+            </div>
+
+            <!-- Menu Grid Content -->
+            <div class="menu-grid-container reveal-on-scroll">
+                <div class="menu-grid">
+                    
+                    <!-- Item 1: Sicilian Slice -->
+                    <div class="menu-item-card" data-category="pizza">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/hero-pizza.png" alt="Slice of classic square Sicilian pizza with mozzarella and sauce" class="menu-item-img">
+                            <span class="menu-item-badge">Bestseller</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Classic Sicilian Slice</h3>
+                                <span class="menu-item-price">$3.50</span>
+                            </div>
+                            <p class="menu-item-ingredients">Crispy crust, thick airy Sicilian dough, family sweet-spiced tomato marinara, and double layers of premium melted mozzarella.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Traditional</span>
+                                <span class="menu-label-tag">Award Winner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Arancini -->
+                    <div class="menu-item-card" data-category="snacks">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/arancini.png" alt="Golden fried Sicilian arancini cut open showing melting mozzarella and ragu" class="menu-item-img">
+                            <span class="menu-item-badge">Local Favorite</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Sicilian Arancini</h3>
+                                <span class="menu-item-price">$4.75</span>
+                            </div>
+                            <p class="menu-item-ingredients">Savory arborio saffron rice ball stuffed with slow-simmered beef ragù, tender green peas, and fresh mozzarella, breaded and golden fried.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Handcrafted</span>
+                                <span class="menu-label-tag">Gluten-Sensitive Option</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Panzarotti -->
+                    <div class="menu-item-card" data-category="snacks">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/arancini.png" alt="Golden brown panzarotti potato croquettes" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Hand-Rolled Panzarotti</h3>
+                                <span class="menu-item-price">$3.25</span>
+                            </div>
+                            <p class="menu-item-ingredients">Fluffy whipped potato croquette infused with imported Pecorino Romano cheese, fresh parsley, and a molten core of Italian provolone.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Crispy Golden</span>
+                                <span class="menu-label-tag">Grandma's Recipe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Spinach Calzone -->
+                    <div class="menu-item-card" data-category="specialties">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/historic-boston.png" alt="Golden stuffed calzone" class="menu-item-img">
+                            <span class="menu-item-badge">Vegetarian</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Spinach & Cheese Calzone</h3>
+                                <span class="menu-item-price">$6.50</span>
+                            </div>
+                            <p class="menu-item-ingredients">Half-moon yeast dough stuffed to the brim with sautéed garlic baby spinach, whole-milk ricotta, mozzarella, and a dash of nutmeg.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Vegetarian</span>
+                                <span class="menu-label-tag">Stone Baked</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Italian Pepperoni Sicilian -->
+                    <div class="menu-item-card" data-category="pizza">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/hero-pizza.png" alt="Sicilian square slice topped with crispy cup-and-char pepperoni" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cup-&-Char Pepperoni</h3>
+                                <span class="menu-item-price">$4.25</span>
+                            </div>
+                            <p class="menu-item-ingredients">Our square Sicilian slice loaded with curly cup-and-char pepperoni, drizzled with organic local hot honey, and sprinkled with oregano.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Spicy Kick</span>
+                                <span class="menu-label-tag">Local Honey</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Pizzetta Margherita -->
+                    <div class="menu-item-card" data-category="specialties">
+                        <div class="menu-item-image-holder">
+                            <img src="assets/historic-boston.png" alt="Margherita pizzetta" class="menu-item-img">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Classic Pizzetta Margherita</h3>
+                                <span class="menu-item-price">$5.50</span>
+                            </div>
+                            <p class="menu-item-ingredients">Mini round thin-crust flatbread topped with crushed San Marzano plum tomatoes, fresh buffalo mozzarella, virgin olive oil, and sweet basil leaves.</p>
+                            <div class="menu-item-footer">
+                                <span class="menu-label-tag">Fresh Herbs</span>
+                                <span class="menu-label-tag">San Marzano</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Historic Menu Board Featuring Nano Banana Food Styling -->
+            <div class="historic-menu-board-wrapper reveal-on-scroll">
+                <div class="historic-menu-board">
+                    <div class="board-header">
+                        <i class="fa-solid fa-leaf board-leaf-left"></i>
+                        <span class="board-title">THE HISTORIC BOARD</span>
+                        <i class="fa-solid fa-leaf board-leaf-right"></i>
+                        <p class="board-subtitle">Culinary Styling & Hand-Lettering by Nano Banana</p>
+                    </div>
+                    <div class="board-grid">
+                        <div class="board-image-panel">
+                            <img src="assets/menu-list.png" alt="Official styled menu lists photo by nano banana featuring historic Boston Italian pizzeria menu" class="board-img">
+                            <div class="board-img-overlay">
+                                <span class="board-img-caption"><i class="fa-solid fa-camera"></i> Official North End Culinary Photography</span>
+                            </div>
+                        </div>
+                        <div class="board-details-panel">
+                            <h3 class="board-details-title">Preserving North End Pizzeria Art</h3>
+                            <p class="board-details-text">
+                                We commissioned local food styling team **Nano Banana** to capture the raw, rustic essence of our classic menu. Shot directly on our weathered pine prep tables, this photo represents generations of flour-dusted hands, sizzling brick ovens, and fresh Italian ingredients.
+                            </p>
+                            <p class="board-details-text">
+                                Our menu hasn’t changed in format, prices, or ingredients since the 70s. We stay true to our roots, offering high-quality, filling street-food slices to tourists, politicians, and local Boston families alike.
+                            </p>
+                            <div class="board-features">
+                                <div class="board-feature-item">
+                                    <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
+                                    <span class="feature-text">100% Saffron Sourced from Sicily</span>
+                                </div>
+                                <div class="board-feature-item">
+                                    <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
+                                    <span class="feature-text">Cash Only - True Historic Boston Tradition</span>
+                                </div>
+                                <div class="board-feature-item">
+                                    <span class="feature-icon"><i class="fa-solid fa-check"></i></span>
+                                    <span class="feature-text">Imported San Marzano D.O.P Tomatoes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="text-center reveal-on-scroll">
+                <span class="section-tag font-gold">TESTIMONIALS</span>
+                <h2 class="section-title">Boston's Best Kept Secret</h2>
+                <div class="title-divider-gold"></div>
+                <p class="reviews-desc font-cream">What our community, local legends, and travelers are saying about their historic Umberto's experience.</p>
+            </div>
+            
+            <!-- Reviews Carousel Container -->
+            <div class="carousel-wrapper reveal-on-scroll">
+                <div class="carousel-container" id="carousel-container">
+                    
+                    <!-- Slide 1 -->
+                    <div class="review-slide active">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                "The square Sicilian slices here are the closest thing to absolute perfection this side of the Atlantic. The crust is thick and airy with crispy, caramelized cheese edges. There is always a line down Hanover Street, and it is 100% worth every second. Reminds me of Galleria Umberto at its prime!"
+                            </p>
+                            <div class="reviewer-meta">
+                                <div class="reviewer-avatar">
+                                    <span class="avatar-initials">MR</span>
+                                </div>
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Marcus Rossi</span>
+                                    <span class="reviewer-role">Boston Local Guide & Food Critic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="review-slide">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                "Unbelievable arancini! They crispy outer shell breaks away to reveal rich, delicious meat sauce and creamy melted cheese that just strings along. My Sicilian grandmother would completely approve of this recipe. Cash-only, authentic, and delightfully historic."
+                            </p>
+                            <div class="reviewer-meta">
+                                <div class="reviewer-avatar">
+                                    <span class="avatar-initials">AG</span>
+                                </div>
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Angela G.</span>
+                                    <span class="reviewer-role">Traveler from Rome, Italy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="review-slide">
+                        <div class="review-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                "You haven't visited Boston if you haven't stood in line at Umberto's in the North End. The panzarotti is hot, potatoey goodness and the classic square slice is stellar. If you see the open sign glowing, run inside! A legendary local institution."
+                            </p>
+                            <div class="reviewer-meta">
+                                <div class="reviewer-avatar">
+                                    <span class="avatar-initials">DK</span>
+                                </div>
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Dave K.</span>
+                                    <span class="reviewer-role">Boston College Alumnus</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Indicators & Navigation -->
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn" id="prev-review" aria-label="Previous review"><i class="fa-solid fa-arrow-left-long"></i></button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                    <button class="carousel-btn next-btn" id="next-review" aria-label="Next review"><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="text-center reveal-on-scroll">
+                <span class="section-tag font-olive">THE VIBE</span>
+                <h2 class="section-title">Captured Moments</h2>
+                <div class="title-divider-gold"></div>
+                <p class="gallery-desc">A visual glimpse into our bustling pizzeria, historic counter, fresh ingredients, and Sicilian ovens.</p>
+            </div>
+            
+            <!-- Gallery Grid with Hover Effects -->
+            <div class="gallery-grid reveal-on-scroll">
+                <div class="gallery-item" data-index="0">
+                    <img src="assets/hero-pizza.png" alt="Freshly baked hot Sicilian slice" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Sicilian Pizza Fresh from the Oven</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="assets/menu-list.png" alt="Rustic printed restaurant menu board by nano banana" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Menu Card Styled by Nano Banana</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="assets/arancini.png" alt="Golden fried Sicilian arancini" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Hand-Rolled Golden Arancini</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="assets/historic-boston.png" alt="Cozy warm historic North End pizzeria interior" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Historic Exposed Brick Dining Room</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="assets/hero-pizza.png" alt="Square Sicilian pizza bubbling with mozzarella cheese" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Double-Baked Golden Dough Slices</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="assets/historic-boston.png" alt="Authentic Italian pizza brick oven with fire embers" class="gallery-img">
+                    <div class="gallery-hover-overlay">
+                        <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                        <span class="gallery-caption">Wood Fire Oven Hearth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+            <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <span class="lightbox-caption" id="lightbox-caption"></span>
+            <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Hours and Location Section -->
+    <section class="hours-location-section" id="hours-location">
+        <div class="container">
+            <div class="grid grid-2-cols gap-large">
+                <!-- Column 1: Opening Hours & Clock -->
+                <div class="hours-panel reveal-on-scroll slide-left">
+                    <span class="section-tag font-brick">PLAN YOUR VISIT</span>
+                    <h2 class="section-title font-dark">Opening Hours</h2>
+                    <div class="title-divider-gold align-left"></div>
+                    
+                    <p class="hours-explanation">
+                        Like the historic Sicilian bakery traditions, we open at 11:00 AM daily and bake continuously. **When we run out of fresh dough for the day, we close.** Most days, this happens around 2:30 PM. For the best experience, we recommend arriving by noon!
+                    </p>
+                    
+                    <!-- Dynamic Live Status Indicator -->
+                    <div class="live-status-card" id="live-status-card">
+                        <div class="live-pulse-ring">
+                            <span class="pulse-dot"></span>
+                        </div>
+                        <div class="live-status-info">
+                            <span class="live-status-label" id="live-status-label">Checking Pizzeria Status...</span>
+                            <span class="live-status-time" id="live-status-time">Boston Local Time: --:-- --</span>
+                        </div>
+                    </div>
+
+                    <div class="hours-schedule">
+                        <div class="schedule-row">
+                            <span class="schedule-day">Tuesday - Saturday</span>
+                            <span class="schedule-time">11:00 AM - 2:30 PM <span class="schedule-note">(or until sold out)</span></span>
+                        </div>
+                        <div class="schedule-row closed">
+                            <span class="schedule-day">Sunday - Monday</span>
+                            <span class="schedule-time">Closed <span class="schedule-note">(Prepping recipes)</span></span>
+                        </div>
+                    </div>
+
+                    <div class="cash-only-warning">
+                        <span class="warning-icon"><i class="fa-solid fa-money-bill-1-wave"></i></span>
+                        <div class="warning-text">
+                            <strong>Important Note: CASH ONLY</strong>
+                            <p>To preserve our historic bakery operations, we do not accept cards. ATM is available in the dining room.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Location Map -->
+                <div class="location-panel reveal-on-scroll slide-right">
+                    <span class="section-tag font-olive">THE HEART OF BOSTON</span>
+                    <h2 class="section-title font-dark">Find Umberto's</h2>
+                    <div class="title-divider-gold align-left"></div>
+                    
+                    <div class="address-details">
+                        <p class="address-text"><i class="fa-solid fa-location-dot font-brick"></i> <strong>289 Hanover Street, Boston, MA 02113</strong></p>
+                        <p class="address-landmark">Located in the historic North End, just a short walk from the Old North Church and the Paul Revere House.</p>
+                    </div>
+
+                    <!-- Interactive Styled Vector Map Container -->
+                    <div class="map-container-wrapper">
+                        <div class="map-container" id="interactive-map">
+                            <!-- Gorgeous Hand-crafted Vector/CSS map showing landmarks, streets and location -->
+                            <div class="custom-vector-map">
+                                <div class="map-water">Boston Harbor</div>
+                                <div class="map-street vertical-street street-commercial">Commercial St</div>
+                                <div class="map-street diagonal-street street-hanover">Hanover Street
+                                    <div class="map-pin-pulse" id="map-pizzeria-pin">
+                                        <div class="pin-marker"><i class="fa-solid fa-pizza-slice"></i></div>
+                                        <div class="pin-pulse"></div>
+                                        <div class="pin-tooltip">Umberto's North End<br><span style="font-size:11px;color:#D9A241;">★ Cash Only Pizzeria ★</span></div>
+                                    </div>
+                                </div>
+                                <div class="map-street vertical-street street-salem">Salem St</div>
+                                <div class="map-street horizontal-street street-prince">Prince St</div>
+                                <div class="map-street horizontal-street street-richmond">Richmond St</div>
+                                
+                                <div class="map-landmark landmark-church"><i class="fa-solid fa-church"></i> Old North Church</div>
+                                <div class="map-landmark landmark-house"><i class="fa-solid fa-house-chimney"></i> Revere House</div>
+                                <div class="map-landmark landmark-park"><i class="fa-solid fa-tree"></i> Paul Revere Mall</div>
+                                <div class="map-compass"><i class="fa-solid fa-compass"></i></div>
+                            </div>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://maps.google.com/?q=289+Hanover+St+Boston+MA+02113" target="_blank" rel="noopener noreferrer" class="btn-map-action"><i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps</a>
+                            <a href="tel:+16175550198" class="btn-map-action secondary"><i class="fa-solid fa-phone"></i> Call (617) 555-0198</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Message Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card-wrapper reveal-on-scroll">
+                <div class="grid grid-2-cols no-gap">
+                    <!-- Column 1: Info Panel -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-panel-title">Get in Touch</h3>
+                        <p class="contact-panel-subtitle">For catering inquiries, large bakery tray orders (24 hours notice required), or group visitors.</p>
+                        
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <span class="detail-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="detail-text">
+                                    <span class="detail-label">Call Our Kitchen</span>
+                                    <a href="tel:+16175550198" class="detail-value">(617) 555-0198</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <span class="detail-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="detail-text">
+                                    <span class="detail-label">Email Inquiries</span>
+                                    <a href="mailto:ciao@umbertosnorthend.com" class="detail-value">ciao@umbertosnorthend.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <span class="detail-icon"><i class="fa-solid fa-truck-ramp-box"></i></span>
+                                <div class="detail-text">
+                                    <span class="detail-label">Large Party Tray Orders</span>
+                                    <span class="detail-value">Call 24 hours in advance to reserve whole Sicilian bakery sheets (24 thick square slices).</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-icons">
+                            <a href="https://www.facebook.com/umbertosnorthend" target="_blank" rel="noopener" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/umbertosnorthend" target="_blank" rel="noopener" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.yelp.com" target="_blank" rel="noopener" aria-label="Yelp Listing"><i class="fa-brands fa-yelp"></i></a>
+                            <a href="https://www.tripadvisor.com" target="_blank" rel="noopener" aria-label="Tripadvisor Listing"><i class="fa-brands fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Form Panel -->
+                    <div class="contact-form-panel">
+                        <h3 class="form-title">Send a Message</h3>
+                        <p class="form-subtitle font-olive">We'll get back to you as soon as our flour dust settles.</p>
+                        
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Your Name *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+                                    <input type="text" id="form-name" class="form-control" placeholder="Umberto Rossi" required>
+                                </div>
+                                <span class="error-msg" id="name-error">Please tell us your name.</span>
+                            </div>
+
+                            <div class="grid grid-2-cols no-gap-mobile">
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">Email Address *</label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+                                        <input type="email" id="form-email" class="form-control" placeholder="ciao@gmail.com" required>
+                                    </div>
+                                    <span class="error-msg" id="email-error">Enter a valid email address.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-phone" class="form-label">Phone Number</label>
+                                    <div class="input-wrapper">
+                                        <span class="input-icon"><i class="fa-solid fa-phone-flip"></i></span>
+                                        <input type="tel" id="form-phone" class="form-control" placeholder="(617) 555-0100">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Inquiry Subject *</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon"><i class="fa-solid fa-tags"></i></span>
+                                    <select id="form-subject" class="form-control select-control" required>
+                                        <option value="" disabled selected>Select an option...</option>
+                                        <option value="catering">Catering Inquiry</option>
+                                        <option value="sheet-pizza">Tray Reserve (Whole Sicilian Sheet)</option>
+                                        <option value="feedback">Feedback & Praise</option>
+                                        <option value="other">General Question</option>
+                                    </select>
+                                </div>
+                                <span class="error-msg" id="subject-error">Select an inquiry type.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Your Message *</label>
+                                <div class="input-wrapper align-start">
+                                    <span class="input-icon textarea-icon"><i class="fa-regular fa-comment-dots"></i></span>
+                                    <textarea id="form-message" class="form-control textarea-control" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Please write a short message.</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit-form"><span class="btn-shine"></span>Send Message <i class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+
+                        <!-- Success Alert Modal Overlay -->
+                        <div class="form-success-alert" id="form-success">
+                            <div class="success-alert-card">
+                                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                <h4 class="success-title">Message Sent, Grazie!</h4>
+                                <p class="success-text font-dark">Your message has drifted successfully into our kitchen. A member of the Umberto family will respond within 24 hours.</p>
+                                <button class="btn btn-primary" id="btn-close-success">Close Window</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Branding Col -->
+                <div class="footer-col branding-col">
+                    <span class="footer-logo">Umberto's</span>
+                    <span class="footer-logo-sub">North End</span>
+                    <p class="footer-brand-desc">Serving authentic square-slice Sicilian bakery trays, golden arancini, and hand-rolled panzarotti under Hanover street lights since 1978.</p>
+                    <span class="cash-note-footer"><i class="fa-solid fa-wallet"></i> Cash Only Establishment</span>
+                </div>
+
+                <!-- Fast Links Col -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home Base</a></li>
+                        <li><a href="#story">Our Roots</a></li>
+                        <li><a href="#menu">Signature Board</a></li>
+                        <li><a href="#reviews">Customer Stories</a></li>
+                        <li><a href="#hours-location">Hours & Location</a></li>
+                    </ul>
+                </div>
+
+                <!-- Local Highlights Col -->
+                <div class="footer-col highlights-col">
+                    <h4 class="footer-title">Boston Landmarks</h4>
+                    <p class="footer-highlight-text"><i class="fa-solid fa-location-arrow"></i> 2 mins walk from Paul Revere House.</p>
+                    <p class="footer-highlight-text"><i class="fa-solid fa-location-arrow"></i> 3 mins walk from Old North Church.</p>
+                    <p class="footer-highlight-text"><i class="fa-solid fa-location-arrow"></i> Near Boston Freedom Trail path.</p>
+                </div>
+
+                <!-- Contact & Directions Col -->
+                <div class="footer-col contact-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <p class="footer-contact-info"><i class="fa-solid fa-phone"></i> <a href="tel:+16175550198">(617) 555-0198</a></p>
+                    <p class="footer-contact-info"><i class="fa-solid fa-envelope"></i> <a href="mailto:ciao@umbertosnorthend.com">ciao@umbertosnorthend.com</a></p>
+                    <p class="footer-contact-info"><i class="fa-solid fa-map-pin"></i> 289 Hanover St, Boston, MA 02113</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">&copy; 2026 Umberto's North End. Inspired by Galleria Umberto. All Rights Styled & Styled by Nano Banana.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Logic Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
