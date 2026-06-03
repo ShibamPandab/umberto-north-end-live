@@ -24,7 +24,8 @@ A modern restaurant landing page inspired by the famous North End dining experie
 
 ## Preview
 
-![Project Preview](./screenshots/umberto-preview.png)
+![Project Preview](./Landing.png)
+[Project Preview](./Menu.png)
 
 ## Project Goal
 
@@ -34,6 +35,6 @@ This project was built to practice modern frontend development principles, respo
 
 **Shibam Pandab**
 
-- Portfolio: YOUR_PORTFOLIO_LINK
-- LinkedIn: YOUR_LINKEDIN_LINK
-- GitHub: https://github.com/ShibamPandab
+- Portfolio: [P](https://shibam-portfolio-omega.vercel.app/)
+- LinkedIn: [L](https://linkedin.com/in/shibam-pandab)
+- GitHub: [G](https://github.com/ShibamPandab)
