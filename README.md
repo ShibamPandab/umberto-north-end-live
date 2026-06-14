@@ -119,6 +119,16 @@ cd Umberto-North-End
 
 ---
 
+## ⚠️ License Notice
+
+**Source code provided for portfolio demonstration purposes only.**
+
+This repository is intended to showcase development, design, and engineering work.
+
+Commercial reuse, redistribution, resale, cloning, or reproduction of this project without explicit written permission is prohibited.
+
+---
+
 <div align="center">
 
 *Crafted with HTML, CSS & JavaScript — a premium frontend showcase project.*
